@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context="com.dev.inder.androideatit.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlayBackground">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        app:srcCompat="@drawable/logo_eat_it" />
+
+    <TextView
+        android:id="@+id/textslogan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:gravity="center"
+        android:text="No matter where you are whether your at home or in the office or at the beach - We will find you and we will feed you"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/btnSignUp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:clickable="true"
+            android:background="@color/btnSignUp"
+            android:textColor="@android:color/white"
+            android:layout_margin="8dp" />
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/btnSignIn"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:text="SignIn"
+            android:background="@color/btnSignActive"
+            android:textColor="@android:color/white"
+            android:layout_margin="8dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+
